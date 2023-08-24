@@ -1,0 +1,5 @@
+:root {
+  --playlist-song-active: rgba(49, 135, 217, 0.7);
+  --playlist-song-hover: #ececec;
+  --playlist-page-sidebar-width: 350px;
+}

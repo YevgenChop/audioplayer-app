@@ -1,0 +1,17 @@
+.player-page {
+    display: grid;
+    grid-template-columns: var(--playlist-page-sidebar-width) 1fr;
+    min-height: 100vh;
+}
+
+.playlist-page-sidebar {
+    box-shadow: 6px -1px 17px 6px rgba(0, 0, 0, 0.2);
+}
+
+.player-page-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
