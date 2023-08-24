@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useEffect, useMemo } from 'react';
 import { Player, Playlist } from 'components';
 import { Song, songs } from 'api';
 
@@ -24,6 +24,10 @@ export const PlayerPage = () => {
       setCurrent(previousSong);
     }
   }, [currentSongIndex]);
+
+  useEffect(() => {
+    document.title = !current ? 'Player' : `Player - ${current.name} - ${current.artist}`
+  }, [current]);
 
   return (
     <div className="player-page">
